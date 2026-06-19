@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <script src="simple-script2.js"></script>
+  <title>Pure JS</title>
+</head>
+<body>
+  <!-- The View UI Elements -->
+  <div id="engine-display">
+  <p>V8 Turbo</p>
+  </div>
+  <button id="update-btn">Update Engine</button>
+  <script>
+    let previousEngine = document.getElementById("engine-display").children[0].innerText; 
+    const button = document.getElementById("update-btn");
+    button.addEventListener("click", () => handleClick(previousEngine));
+  </script>
+</body> 
+</html>

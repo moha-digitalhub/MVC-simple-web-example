@@ -1,0 +1,8 @@
+DI notes:
+---------
+1- If i hold an interface reference to the object that means i dont know the exact type(loose) and i cant change the type to another type at the same level of abstraction.
+2- If i hold an ordinary refernce to the object then this object can be modified outside the class not
+   tightly coupled to the owner
+3- Unit test easily with mocks( i pass as many different mock references as i want)
+4- Centralize object creation (frameworks do this) like factory
+5- Can be stateful or stateless.
